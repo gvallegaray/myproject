@@ -1,0 +1,188 @@
+
+/* esto es para comentarios */
+h1 {
+
+    color: red;
+
+    text-shadow: 5px 3px 2px rgb(120, 120, 179);
+}
+
+nav {
+    background-color: cadetblue;
+    text-align: center;
+}
+a {
+
+    text-decoration-line: none;
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    padding: 30px;
+}
+
+.specialtitle {
+    color: rgb(39, 126, 65);
+}
+#myitalic {
+
+    color: rgb(141, 49, 110);
+}
+
+.divSolid{
+    border: 5px solid red;
+}
+.divDashed{
+    border: 5px dashed blue;
+}
+.divDotted{
+    border: 5px dotted green;
+    margin: 25px 10px 20px 30px;
+    padding: 5px 10px 20px 30px;
+
+}
+.box
+{
+ /*   display: inline-block;*/
+    background: blue;
+    height: 100px;
+    width: 100px;
+/*    margin: 25px 0px;*/
+margin: 20px;
+
+}
+
+.circleImage{
+    border-radius: 50%;
+}
+
+img {
+
+    box-shadow: 10px 5px 5px rgb(151, 151, 179);
+}
+
+.flex{
+display: flex;
+border: 2px solid black;
+flex-wrap: wrap;
+margin:30px;
+justify-content: center;
+padding: 50px;
+flex-grow: 2;
+}
+
+@keyframes fadeMe{
+0%{
+opacity: 0;
+}
+
+50% {
+opacity: 0.5;
+
+}
+
+100% {
+opacity: 1;
+}
+
+}
+
+@keyframes rotation {
+0% {
+transform: rotate(90deg);
+}
+50% {
+    transform: rotate(180deg);
+
+}
+
+100% {
+    transform: rotate(360deg);
+
+
+}
+
+}
+
+@keyframes getBigger{
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(0.5);}
+}
+
+@keyframes changeColors{
+
+    0% {background-color: yellow;}
+    25% {background-color:blue;}
+    50% {background-color: red;}
+    100% {background-color: green;}
+    
+}
+
+@keyframes moveBox{  
+    
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    25% {background-color: white; left: 100px; top: 0px;}
+    50% {background-color: brown; left: 100px; top: 200px;}
+    75% {background-color: purple; left: 0px; top: 200px;}
+    100% {background-color: yellow; left 0px; top: 0px;}
+    
+}
+
+#box1 {
+animation-name: fadeMe;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+#box2 {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, purple, orange, blue, red);
+    }
+#box3 {
+    animation: 2s linear infinite getBigger;
+    border-radius: 30%;
+    background-color: green;
+}
+#box4 {
+    animation: changeColors 4s infinite;
+}
+#box5 {
+    position: relative;
+    animation: moveBox 4s infinite;
+}
+
+#box6 {
+    position: fixed; /*relative, absolute*/
+    top:200px;
+    left:200px;
+
+}
+
+body {
+/*background-image: url(mykitten.jpg);
+background-repeat: no-repeat;
+background-size: cover;*/
+/* background-image: linear-gradient(to right, blue, green, purple );*/
+background-image: radial-gradient(blue, green, purple );
+
+}
+/* to copy paste code goto : https://materializecss.com/ */
+
+.nav-wrapper {
+    background-color: royalblue; 
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
